@@ -1,0 +1,8 @@
+C:\Users\b06501015\source\repos\Capstone\Capstone\obj\Debug\Capstone.csprojAssemblyReference.cache
+C:\Users\b06501015\source\repos\Capstone\Capstone\obj\Debug\Capstone.csproj.CoreCompileInputs.cache
+C:\Users\b06501015\source\repos\Capstone\Capstone\bin\Debug\Capstone.dll
+C:\Users\b06501015\source\repos\Capstone\Capstone\bin\Debug\Capstone.pdb
+C:\Users\b06501015\source\repos\Capstone\Capstone\obj\Debug\Capstone.dll
+C:\Users\b06501015\source\repos\Capstone\Capstone\obj\Debug\Capstone.pdb
+C:\Users\b06501015\source\repos\Capstone\Capstone\obj\Debug\Capstone.CapstoneWindowsForm.resources
+C:\Users\b06501015\source\repos\Capstone\Capstone\obj\Debug\Capstone.csproj.GenerateResource.cache
