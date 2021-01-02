@@ -44,6 +44,12 @@
             this.Stage13Button = new System.Windows.Forms.Button();
             this.Stage12Button = new System.Windows.Forms.Button();
             this.Stage11Button = new System.Windows.Forms.Button();
+            this.label1 = new System.Windows.Forms.Label();
+            this.StageContentLabel = new System.Windows.Forms.Label();
+            this.label2 = new System.Windows.Forms.Label();
+            this.label3 = new System.Windows.Forms.Label();
+            this.GroundDeflection = new System.Windows.Forms.Label();
+            this.WallBuckle = new System.Windows.Forms.Label();
             this.SuspendLayout();
             // 
             // Stage1Button
@@ -104,7 +110,7 @@
             // ShowAll
             // 
             this.ShowAll.Font = new System.Drawing.Font("Arial", 10.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
-            this.ShowAll.Location = new System.Drawing.Point(621, 721);
+            this.ShowAll.Location = new System.Drawing.Point(621, 373);
             this.ShowAll.Name = "ShowAll";
             this.ShowAll.Size = new System.Drawing.Size(192, 74);
             this.ShowAll.TabIndex = 5;
@@ -222,11 +228,71 @@
             this.Stage11Button.UseVisualStyleBackColor = true;
             this.Stage11Button.Click += new System.EventHandler(this.Stage11_Click);
             // 
+            // label1
+            // 
+            this.label1.Font = new System.Drawing.Font("微軟正黑體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label1.Location = new System.Drawing.Point(52, 401);
+            this.label1.Name = "label1";
+            this.label1.Size = new System.Drawing.Size(418, 70);
+            this.label1.TabIndex = 16;
+            this.label1.Text = "此階段的施工內容：";
+            // 
+            // StageContentLabel
+            // 
+            this.StageContentLabel.Font = new System.Drawing.Font("微軟正黑體", 13.875F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.StageContentLabel.Location = new System.Drawing.Point(76, 471);
+            this.StageContentLabel.Name = "StageContentLabel";
+            this.StageContentLabel.Size = new System.Drawing.Size(668, 145);
+            this.StageContentLabel.TabIndex = 17;
+            this.StageContentLabel.Text = "None";
+            // 
+            // label2
+            // 
+            this.label2.Font = new System.Drawing.Font("微軟正黑體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label2.Location = new System.Drawing.Point(52, 656);
+            this.label2.Name = "label2";
+            this.label2.Size = new System.Drawing.Size(500, 70);
+            this.label2.TabIndex = 18;
+            this.label2.Text = "Torsa計算之地表沉陷量     = ";
+            // 
+            // label3
+            // 
+            this.label3.Font = new System.Drawing.Font("微軟正黑體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.label3.Location = new System.Drawing.Point(52, 726);
+            this.label3.Name = "label3";
+            this.label3.Size = new System.Drawing.Size(500, 70);
+            this.label3.TabIndex = 19;
+            this.label3.Text = "Torsa計算之最大壁體變形 = ";
+            // 
+            // GroundDeflection
+            // 
+            this.GroundDeflection.Font = new System.Drawing.Font("微軟正黑體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.GroundDeflection.Location = new System.Drawing.Point(558, 656);
+            this.GroundDeflection.Name = "GroundDeflection";
+            this.GroundDeflection.Size = new System.Drawing.Size(186, 70);
+            this.GroundDeflection.TabIndex = 20;
+            this.GroundDeflection.Text = "None";
+            // 
+            // WallBuckle
+            // 
+            this.WallBuckle.Font = new System.Drawing.Font("微軟正黑體", 13.875F, System.Drawing.FontStyle.Bold, System.Drawing.GraphicsUnit.Point, ((byte)(136)));
+            this.WallBuckle.Location = new System.Drawing.Point(558, 726);
+            this.WallBuckle.Name = "WallBuckle";
+            this.WallBuckle.Size = new System.Drawing.Size(186, 70);
+            this.WallBuckle.TabIndex = 21;
+            this.WallBuckle.Text = "None";
+            // 
             // CapstoneWindowsForm
             // 
             this.AutoScaleDimensions = new System.Drawing.SizeF(13F, 24F);
             this.AutoScaleMode = System.Windows.Forms.AutoScaleMode.Font;
-            this.ClientSize = new System.Drawing.Size(848, 838);
+            this.ClientSize = new System.Drawing.Size(848, 890);
+            this.Controls.Add(this.WallBuckle);
+            this.Controls.Add(this.GroundDeflection);
+            this.Controls.Add(this.label3);
+            this.Controls.Add(this.label2);
+            this.Controls.Add(this.StageContentLabel);
+            this.Controls.Add(this.label1);
             this.Controls.Add(this.Stage15Button);
             this.Controls.Add(this.Stage14Button);
             this.Controls.Add(this.Stage13Button);
@@ -245,6 +311,7 @@
             this.Controls.Add(this.Stage1Button);
             this.Name = "CapstoneWindowsForm";
             this.Text = "CapstoneWindowsForm";
+            this.FormClosing += new System.Windows.Forms.FormClosingEventHandler(this.CapstoneWindowsForm_FormClosing);
             this.Load += new System.EventHandler(this.CapstoneWindowsForm_Load);
             this.ResumeLayout(false);
 
@@ -268,5 +335,11 @@
         private System.Windows.Forms.Button Stage13Button;
         private System.Windows.Forms.Button Stage12Button;
         private System.Windows.Forms.Button Stage11Button;
+        private System.Windows.Forms.Label label1;
+        private System.Windows.Forms.Label StageContentLabel;
+        private System.Windows.Forms.Label label2;
+        private System.Windows.Forms.Label label3;
+        private System.Windows.Forms.Label GroundDeflection;
+        private System.Windows.Forms.Label WallBuckle;
     }
 }
